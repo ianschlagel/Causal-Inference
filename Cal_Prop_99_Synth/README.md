@@ -1,7 +1,7 @@
 # California Proposition 99: A Synthetic Control Replication
 
 ## 📋 Project Overview
-This repository provides a fully automated replication of the landmark study by **Abadie, Diamond, and Hainmueller (2010)**. The project evaluates the impact of California’s 1988 tobacco control program (Proposition 99) on per capita cigarette consumption.
+This repository replicates and **extends** the landmark study by **Abadie, Diamond, and Hainmueller (2010)** regarding California’s Proposition 99. While the original study relies on a subset of economic predictors and three specific outcome lags, this project pushes the analysis further by implementing an **"All-Lags" sensitivity model** to test the absolute stability of the synthetic counterfactual.
 
 By utilizing the **Synthetic Control Method (SCM)**, the analysis compares California's actual outcomes to a weighted "counterfactual" constructed from 38 donor states.
 
