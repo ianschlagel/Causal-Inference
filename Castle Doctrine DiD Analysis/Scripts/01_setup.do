@@ -1,5 +1,6 @@
 * ==============================================================================
 * PROJECT: Impact of Castle Doctrine Laws on Crime Rates
+* AUTHOR: Ian Schlagel
 * SCRIPT: 01_setup.do
 * PURPOSE: Data ingestion and variable construction (Leads, Lags, and Cohorts)
 * ==============================================================================
