@@ -34,14 +34,14 @@ ssc install ftools    // Required dependency for reghdfe
 ssc install ebalance  // Entropy Balancing weights
 ssc install csdid     // Callaway & Sant'Anna (2020) estimators
 ssc install drdid     // Doubly Robust DID
-    ```
+```
 * --- Visualization & Data Management ---
 ```stata
 ssc install panelview // Treatment timing visualization
 ssc install coefplot  // Event study coefficient plots
 ssc install labutil   // Variable label management
 ssc install sencode   // String-to-numeric encoding
-    ```
+```
 2.  **Execution:** Clone this repository, set your working directory to this project folder, and execute:
     ```stata
     do master.do
