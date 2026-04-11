@@ -6,9 +6,9 @@ This repository provides a fully automated replication of the landmark study by 
 By utilizing the **Synthetic Control Method (SCM)**, the analysis compares California's actual outcomes to a weighted "counterfactual" constructed from 38 donor states.
 
 ## 📂 Repository Contents
-* **`CausalHW2.do`**: The complete Stata research script. It is designed for 100% reproducibility by pulling the required data directly from this repository's raw URL.
+* **`Causal_SCM_Project.do`**: The complete Stata research script. It is designed for 100% reproducibility by pulling the required data directly from this repository's raw URL.
 * **`smoking-3.dta`**: The primary dataset (Smoking panel data, 1970–2000).
-* **`California_Smoking_Analysis.pdf`**: The final technical report containing the replication results, sensitivity checks, and placebo tests.
+* **`Causal_Proejct2_SC.pdf`**: The final technical report containing the replication results, sensitivity checks, and placebo tests.
 
 ## 🚀 Key Features of the Analysis
 * **JASA Replication**: Recreates the original results using `nested` optimization and 1980–1988 predictor balancing.
