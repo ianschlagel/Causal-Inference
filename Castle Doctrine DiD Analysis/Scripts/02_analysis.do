@@ -1,5 +1,6 @@
 * ==============================================================================
 * PROJECT: Impact of Castle Doctrine Laws on Crime Rates
+* AUTHOR: Ian Schlagel
 * SCRIPT: 02_analysis.do
 * PURPOSE: Run DiD, Event Study, Entropy Balancing, and CSDID Estimations
 * ==============================================================================
