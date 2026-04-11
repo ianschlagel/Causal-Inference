@@ -1,4 +1,4 @@
-# Causal Inference & Policy Evaluation
+# Causal Inference
 
 This repository features a collection of research projects focused on causal identification in public policy and political economy. Each project utilizes a distinct quasi-experimental framework to isolate treatment effects and test the robustness of modern econometric assumptions.
 
