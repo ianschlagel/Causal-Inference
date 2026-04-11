@@ -27,10 +27,20 @@ To ensure a robust causal claim and account for the complexities of observationa
 ## How to Replicate
 1.  **System Requirements:** Open Stata and ensure the following packages are installed:
     ```stata
-    ssc install reghdfe
-    ssc install ebalance
-    ssc install csdid
-    ssc install drdid
+* Required for regressions and data processing
+ssc install reghdfe
+ssc install ftools
+ssc install ebalance
+
+* Required for Callaway & Sant'Anna (2020) estimators
+ssc install csdid
+ssc install drdid
+
+* Required for Visualization and Plotting
+ssc install panelview
+ssc install coefplot
+ssc install labutil
+ssc install sencode
     ```
 2.  **Execution:** Clone this repository, set your working directory to this project folder, and execute:
     ```stata
