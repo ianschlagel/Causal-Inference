@@ -25,17 +25,3 @@ This repository features a collection of research projects focused on causal ide
 * **Result:** Demonstrates a significant incumbency advantage that persists even under the strictest bandwidth constraints.
 
 ---
-
-## 📂 Repository Structure
-
-```text
-├── California_Prop99_SCM/
-│   ├── Causal_SCM_Project.do     # Stata Script (Universal Data Access)
-│   └── Causal_Proejct2_SC.pdf    # Technical Report & Placebo Tests
-├── Castle_Doctrine_DiD/
-│   ├── master.do                 # Primary Replication Pipeline
-│   ├── Scripts/                  # Setup and Analysis Sub-scripts
-│   └── Causal_Project1_DiD.pdf   # Technical Report & Event Study Plots
-└── Incumbency_RDD/
-    ├── Causal_RDD_Project.do     # Stata Script (Universal Data Access)
-    └── Causal_Project3_RDD.pdf   # Technical Report & Covariate Balance
