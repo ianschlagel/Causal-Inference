@@ -30,7 +30,6 @@ To ensure a robust causal claim and account for the complexities of observationa
 * --- Econometric Engines ---
 ```stata
 ssc install reghdfe   // High-dimensional fixed effects
-ssc install ftools    // Required dependency for reghdfe
 ssc install ebalance  // Entropy Balancing weights
 ssc install csdid     // Callaway & Sant'Anna (2020) estimators
 ssc install drdid     // Doubly Robust DID
