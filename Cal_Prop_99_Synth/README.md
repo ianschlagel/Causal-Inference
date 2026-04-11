@@ -23,3 +23,5 @@ To reproduce the findings on your machine:
    ```stata
    ssc install synth
    ssc install synth_runner
+
+2. Run: **`Causal_SCM_Project.do`**
