@@ -22,7 +22,7 @@ To ensure a robust causal claim and account for the complexities of observationa
 * `master.do`: The primary replication script that runs the entire pipeline.
 * `Scripts/01_setup.do`: Handles data ingestion from the Mixtape repository and variable construction (leads, lags, and treatment cohorts).
 * `Scripts/02_analysis.do`: Contains all econometric estimations, entropy balancing, and graph generation commands.
-* `Results/`: Contains the full technical report (PDF) and high-resolution Event Study plots.
+* `Causal_Project1_DiD.pdf`: Contains the full technical report (PDF) and high-resolution Event Study plots.
 
 ## How to Replicate
 1.  **System Requirements:** Open Stata and ensure the following packages are installed:
