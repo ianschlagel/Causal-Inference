@@ -21,7 +21,7 @@ The analysis utilizes the **Synthetic Control Method (SCM)** to construct a "Cou
     * `California_Smoking_Report.pdf`: The final technical report containing SCM plots and predictor balance tables.
 
 ## 📊 Summary of Findings
-The baseline model suggests that Proposition 99 reduced cigarette consumption by approximately **20 packs per capita annually** by the year 2000. Permutation tests confirm that California's divergence is an outlier relative to the 38 donor states, yielding a standardized p-value of **p < 0.05**.
+The baseline model suggests that Proposition 99 reduced cigarette consumption by approximately **20 packs per capita annually** by the year 2000. Permutation tests confirm that California's divergence is an outlier relative to the 38 donor states.
 
 ## 🛠 How to Replicate
 1. **System Requirements:** Open Stata and ensure the following packages are installed:
