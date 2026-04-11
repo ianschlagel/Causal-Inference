@@ -16,7 +16,7 @@ To ensure a robust causal claim and account for the complexities of observationa
 ## Key Findings
 * **Property Crime (Burglary):** While initial models suggested a significant increase in burglary (approx. 64 per 100k), results were sensitive to weighting. However, the robust **CSDID estimator** identified a significant increase in burglaries (15 per 100k) specifically within the first year of law adoption.
 * **Violent Crime (Assault):** Standard DiD models yielded null results. However, the staggered event study revealed a significant **negative effect** on assaults five years post-treatment (approx. 112 per 100k), suggesting potential long-run behavioral shifts.
-* **Deterrence Hypothesis:** Overall, the results fail to provide evidence that Castle Doctrine laws act as an immediate or meaningful deterrent for property or violent crime.
+* **Deterrence Hypothesis:** Overall, the results fail to provide evidence that Castle Doctrine laws act as an immediate deterrent for property or violent crime.
 
 ## Repository Structure
 * `master.do`: The primary replication script that runs the entire pipeline.
