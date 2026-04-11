@@ -26,21 +26,21 @@ To ensure a robust causal claim and account for the complexities of observationa
 
 ## How to Replicate
 1.  **System Requirements:** Open Stata and ensure the following packages are installed:
-    ```stata
-* Required for regressions and data processing
-ssc install reghdfe
-ssc install ftools
-ssc install ebalance
 
-* Required for Callaway & Sant'Anna (2020) estimators
-ssc install csdid
-ssc install drdid
-
-* Required for Visualization and Plotting
-ssc install panelview
-ssc install coefplot
-ssc install labutil
-ssc install sencode
+* --- Econometric Engines ---
+```stata
+ssc install reghdfe   // High-dimensional fixed effects
+ssc install ftools    // Required dependency for reghdfe
+ssc install ebalance  // Entropy Balancing weights
+ssc install csdid     // Callaway & Sant'Anna (2020) estimators
+ssc install drdid     // Doubly Robust DID
+    ```
+* --- Visualization & Data Management ---
+```stata
+ssc install panelview // Treatment timing visualization
+ssc install coefplot  // Event study coefficient plots
+ssc install labutil   // Variable label management
+ssc install sencode   // String-to-numeric encoding
     ```
 2.  **Execution:** Clone this repository, set your working directory to this project folder, and execute:
     ```stata
