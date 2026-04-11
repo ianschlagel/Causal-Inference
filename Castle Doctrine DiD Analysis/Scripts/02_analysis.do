@@ -35,13 +35,28 @@ gen wt_burglary = _webal
 bysort state: egen wt_burglary_full = max(wt_burglary)
 drop _webal wt_burglary
 
-* --- 4. Weighted Analysis (DiD & Event Study) ---
+* --- 4. Weighted Analysis DiD ---
 gen after = (year == 2009)
 reg assault i.treated##i.after [aweight=wt_assault_full] if year == 2005 | year == 2009, vce(cluster state)
 reg burglary i.treated##i.after [aweight=wt_burglary_full] if year == 2005 | year == 2009, vce(cluster state)
 drop after
 
-* --- 5. Staggered DiD (Callaway & Sant'Anna) ---
+* --- 5. Weighted Event Study ---
+display "--- Running Weighted Event Studies (Entropy Balanced) ---"
+
+* Weighted Event Study for Assault
+reghdfe assault pre_* post_* [aweight=wt_assault_full] if keep_sample == 1, absorb(sid year) vce(cluster sid)
+coefplot, vertical keep(pre_* post_*) yline(0) ///
+    title("Assault: Weighted Event Study") ///
+    subtitle("Entropy Balanced on 2005 Covariates")
+
+* Weighted Event Study for Burglary
+reghdfe burglary pre_* post_* [aweight=wt_burglary_full] if keep_sample == 1, absorb(sid year) vce(cluster sid)
+coefplot, vertical keep(pre_* post_*) yline(0) ///
+    title("Burglary: Weighted Event Study") ///
+    subtitle("Entropy Balanced on 2005 Covariates")
+
+* --- 6. Staggered DiD (Callaway & Sant'Anna) ---
 display "--- Running CSDID (Correcting for Staggered Timing) ---"
 * We reload the full dataset here to include all treatment cohorts
 use "https://github.com/scunning1975/mixtape/raw/master/castle.dta", clear
