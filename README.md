@@ -16,7 +16,7 @@ This repository features a collection of research projects focused on causal ide
 **Method:** Difference-in-Differences (DiD), Entropy Balancing, CSDID  
 * **Overview:** Replicates and extends **Cheng & Hoekstra (2013)** to evaluate the impact of "Stand Your Ground" laws on violent and property crime.
 * **Key Innovation:** Addresses staggered treatment timing using the **Callaway & Sant’Anna (2021)** estimator and ensures conditional parallel trends via **Entropy Balancing** on police presence and welfare spending.
-* **Result:** Finds no evidence of deterrence; instead, reveals a significant increase in burglary following policy adoption.
+* **Result:** Find mixed evidence of deterrence.
 
 ### 3. Incumbency Advantage: Regression Discontinuity
 **Method:** Regression Discontinuity Design (RDD)  
